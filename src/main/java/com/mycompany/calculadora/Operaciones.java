@@ -13,28 +13,27 @@ public class Operaciones {
     
 //Atributos
 
-    int suma;
-    int resta;
-    int multiplicacion;
-    int division;
-    
     //Métodos 
     
-    public void sumar(int numero1, int numero2){
-       suma =numero1 + numero2;
+    public int sumar(int numero1, int numero2){
+       int suma =numero1 + numero2;
+       return suma;
     }
     
-    public void restar(int numero1, int numero2){
-       resta =numero1 - numero2;
+    public int restar(int numero1, int numero2){
+       int resta =numero1 - numero2;
+       return resta;
     }
-     public void multiplicar(int numero1, int numero2){
-       multiplicacion =numero1 * numero2;
+     public int multiplicar(int numero1, int numero2){
+      int multiplicacion =numero1 * numero2;
+      return multiplicacion;
     }
     
-    public void dividir(int numero1, int numero2){
-       division =numero1 / numero2;
+    public int dividir(int numero1, int numero2){
+       int division =numero1 / numero2;
+       return division;
     }
-    public void mostrarResultados(){
+    public void mostrarResultados(int suma, int resta, int multiplicacion, int division){
        System.out.println(" la suma es" + suma);
        System.out.println(" la restsa es" + resta);
        System.out.println(" la multiplicacion es" + multiplicacion);
